@@ -16,4 +16,14 @@ public class TrackCoach implements Coach {
     public String getDailyFortune() {
         return "Just Do It: " + fortuneService.getFortune();
     }
+
+//    custom init method
+    public void coachStartup() {
+        System.out.println("Track coach starting up!");
+    }
+
+//    custom destroy method
+    public void coachDestroy() {
+        System.out.println("Track coach being distroyed!");
+    }
 }
